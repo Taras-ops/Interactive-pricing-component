@@ -55,8 +55,8 @@ checkbox.addEventListener('input', (e) => {
     checked = e.target.checked
     if(checked) {
         previousPrice = priceText[0].innerHTML
-        priceText[0].innerText = priceText.innerText * 0.75
-        priceText[1].innerText = priceText.innerText * 0.75
+        priceText[0].innerText = priceText[0].innerText * 0.75
+        priceText[1].innerText = priceText[1].innerText * 0.75
     }
     else{
         priceText[0].innerHTML = previousPrice
