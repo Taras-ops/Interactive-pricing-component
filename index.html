@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="title">Simple, traffic-based pricing</h1>
+        <p class="subtitle">Sign-up for our 30-day trial. No credit card required.</p>
+        <img class="header__image" src="images/pattern-circles.svg"/>
+      </div>
+    </header>
+    
+    <div class="box">
+      <div class="box__header">
+        <p class="box__pageviews"><span id="pageviews"></span> Pageviews</p>
+        <div class="box__price-wrapper">
+          <p class="box__price">$<span id="priceText"></span>.00</p>
+          <p>/ month</p>
+        </div>
+      </div>
+      <div>
+        <input class="box__price-input" value="1" type="range" id="priceInput" min="1" max="5"/>
+      </div>
+      <div class="box__price-wrapper _mobile">
+        <p class="box__price">$<span id="priceText"></span>.00</p>
+        <p>/ month</p>
+      </div>
+      <div class="box__billing">
+        <p>Monthly Billing</p>
+        <label for="checkbox" class="switch">
+          <input type="checkbox" class="checkbox" id="checkbox" name="checkbox">
+          <div class="slider round"></div>
+        </label>
+        <p>Yearly Billing</p>
+        <p class="box__discount">25% discount</p>
+        <p class="box__discount _mobile">-25%</p>
+      </div>
+      <div class="box__bottom">
+        <ul>
+          <li>
+            <img src="images/icon-check.svg"/>
+            <p>Unlimited websites</p>
+          </li>
+          <li>
+            <img src="images/icon-check.svg" />
+            <p>100% data ownership</p>
+          </li>
+          <li>
+            <img src="images/icon-check.svg" />
+            <p>Email reports</p>
+          </li>
+        </ul>
+        <a href="" class="box__button">Start my trial</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
